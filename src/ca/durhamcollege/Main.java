@@ -11,7 +11,8 @@ public class Main {
 
         Scanner keyboard = new Scanner(System.in);
         String prompt = "";
-        int numOfPoints = 6;
+        int numOfPoints = 4;
+
         //Instantiates the collection container
         Vector<Vector2D> points = new Vector<Vector2D>();
 
@@ -25,7 +26,7 @@ public class Main {
 
 
         // write your code here
-        Vector2D point1 = new Vector2D();
+
 
         for (int i = 0; i < 3; i+=2) {
 
@@ -39,7 +40,7 @@ public class Main {
             System.out.println("\n--------------------------------------------------------------");
             System.out.println("You Entered " + points.get(i).toString() + " for the first point");
             System.out.println("--------------------------------------------------------------\n");
-            Vector2D point2 = new Vector2D();
+
             System.out.print("Enter the second point (x, y): ");
 
             prompt = keyboard.nextLine();
@@ -57,9 +58,9 @@ public class Main {
 
             points.add(randomVector2D);
         }
-        System.out.printf( "Magnitude of first random point is: %.3f" , points.get(4).getMagnitude());
-        System.out.printf ("Magnitude of second  random point is:  %.3f" , points.get(5).getMagnitude());
-        System.out.printf ("Distance between first point and second point is: %.3f" , Vector2D.distance(points.get(4), points.get(5))) ;
+        System.out.printf( "Magnitude of first random point is: %.3f\n" , points.get(4).getMagnitude());
+        System.out.printf ("Magnitude of second  random point is:  %.3f\n" , points.get(5).getMagnitude());
+        System.out.printf ("Distance between first point and second point is: %.3f \n" , Vector2D.distance(points.get(4), points.get(5))) ;
         System.out.printf ("--------------------------------------------------------------\n" );
 
 
